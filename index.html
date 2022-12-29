@@ -1,15 +1,549 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alder French's Website</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140394429-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-140394429-1');
+</script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" content="Practical Web Design and Tech Support without the Stress">
+  <meta name="description" content="Friendly web design and tech support.
+  Professional IT services with a focus on communication and education for long
+  term solutions to modern problems. ">
+  <meta name="keywords" content="eugene, oregon, technical support, web design,
+  web design, SEO, search engine optimization, geek on a bike, tech support, ">
+  <meta name="author" content="Alder French">
+  <title>Geekonabike | Local Tech Support for Eugene, OR</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="mycss/index.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
+
+<style type="text/css">
+  /* Animate bike animation */
+  .bikeanimation {
+    width: 450px;
+    height: auto;
+    font-weight: bold;
+    position: relative;
+    -webkit-animation: mymove 5s;
+    /* Safari 4.0 - 8.0 */
+    animation: mymove 5s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+  }
+
+
+
+  /* Standard syntax */
+  @keyframes mymove {
+    from {
+      left: -25%;
+    }
+
+    to {
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+
+  /* Animate "Geekonabike" Fade in */
+  .nameanimation {
+    position: relative;
+    bottom: 100px;
+    text-align: center;
+
+    -webkit-animation: fadein 5s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 5s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 5s;
+    /* Internet Explorer */
+    -o-animation: fadein 5s;
+    /* Opera < 12.1 */
+    animation: fadein 5s;
+  }
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Firefox < 16 */
+  @-moz-keyframes fadein {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Safari, Chrome and Opera > 12.1 */
+  @-webkit-keyframes fadein {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Internet Explorer */
+  @-ms-keyframes fadein {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+
 <body>
-    <h1>I will make this real nice after finals, I plan on using it for the job applications <br>
-        that I will be filling out during winter break. Thanks for the career seminar it helped me feel <br> 
-        a lot more prepared for life after college!</h1>
-    
+
+
+  <!-- Home Body -->
+  <section class="hero is-fullheight">
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container is-fullhd">
+          <div class="navbar-brand">
+            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div class="navbar-menu" id="navbarMenuHeroA">
+            <div class="navbar-start" style="margin-left:5px;">
+              <a href="./home.html" class="navbar-item is-active has-text-link">
+                Home
+              </a>
+              <a href="./services.html" class="navbar-item">
+                Services
+              </a>
+              <a href="./portfolio.html" class="navbar-item">
+                Portfolio
+              </a>
+              <a href="./about.html" class="navbar-item">
+                About
+              </a>
+              <a href="./contact.html" class="navbar-item">
+                Contact
+              </a>
+            </div>
+            <div class="navbar-end">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="hero-body">
+      <div class="bikeanimation" id="div2">
+        <img src="./img/logo.png" alt="" width="auto" height="200px">
+      </div>
+
+    </div>
+    <div class="hero-foot">
+      <div class="nameanimation">
+        <h1 class="title">
+          Geek on a bike
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero-eugene is-fullheight">
+    <div class="hero-head">
+      <div class="container">
+        <h2 class="title has-text-centered has-text-white"><br>What is Geek on a bike?</h2>
+      </div>
+    </div>
+    <div class="hero-body">
+      <div class="container is-fluid has-text-centered">
+        <p class="subtitle has-text-white text-background">Geek on a bike is a local tech support business located in Eugene, Oregon. It was founded to help small business owners deal with all the technical difficulties that occur in this modern age. What sets us apart from other technical support companies is our focus on honesty, courtesy, and convenience for our customers. We are the only tech support business in Eugene that specializes in face to face tech support. We understand the value of doing business the old fashioned way in order to keep things simple as possible in an increasingly complex world. For that reason the services we offer are all based on getting a geek out to your business so they can physically help you. Same day appointments are our bread and butter. Got a problem? Don't worry, a geek will be right there!</p>
+      </div>
+    </div>
+    <div class="hero-foot">
+
+    </div>
+  </section>
+
+
+
+  <!-- Begin Services Section -->
+  <section class="hero is-fullheight has-background-white" style="margin:10px;">
+    <div class="hero-head has-text-centered">
+      <h2 class="title is-2">Services</h2>
+      <br>
+    </div>
+      <div class="tile is-ancestor">
+        <div class="tile is-parent has-text-centered border-primary">
+          <div class="tile is-child">
+            <h1>
+              Computer Repair & Setup
+            </h1>
+            <figure class="image is-128x128" style="left:50%; transform:translate(-50%);">
+              <img src="./img/personal-computer.svg" alt="">
+            </figure>
+            <p>
+              Slow or malfunctioning computer? Worried about a virus? No problem we can help. Geek on a bike services both mac and windows systems.
+            </p>
+          </div>
+
+        </div>
+          <div class="tile is-parent has-text-centered border-primary">
+            <div class="tile is-child">
+              <h1>
+                Internet Help
+              </h1>
+              <figure class="image is-128x128" style="left:50%; transform:translate(-50%);">
+                <img src="./img/wireless-internet.svg" alt="">
+              </figure>
+              <p>
+                Need help setting up your internet? Wifi running slow? Xfinity got you down? We will take care of all your internet needs!
+              </p>
+            </div>
+          </div>
+          <div class="tile is-parent has-text-centered border-primary">
+            <div class="tile is-child">
+              <h1>
+                POS Troubleshooting & Setup
+              </h1>
+              <figure class="image is-128x128" style="left:50%; transform:translate(-50%);">
+                <img src="./img/cash-register.svg" alt="">
+              </figure>
+              <p>
+                Square, Clover, and Stripe, Oh My! Having issues with your Point of Sales system? Maybe you need help setting it up. Either way, a geek can help.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-ancestor">
+          <div class="tile is-parent has-text-centered border-primary">
+            <div class="tile is-child">
+              <h1>
+                Web Design & SEO
+              </h1>
+              <figure class="image is-128x128" style="left:50%; transform:translate(-50%);">
+                <img src="./img/web-development.svg" alt="">
+              </figure>
+              <p>
+                Need a new website? Or perhaps just help dealing with your existing one. We can help put you on the map, specifically the google kind.
+              </p>
+            </div>
+          </div>
+          <div class="tile is-parent has-text-centered border-primary">
+            <div class="tile is-child">
+              <h1>
+                Printer Repair & Setup
+              </h1>
+              <figure class="image is-128x128" style="left:50%; transform:translate(-50%);">
+                <img src="./img/printer.svg" alt="">
+              </figure>
+              <p>
+                A great man once said "in this world nothing can be certain except death,  taxes, and printer malfunctions. "
+              </p>
+            </div>
+          </div>
+          <div class="tile is-parent has-text-centered border-primary">
+            <div class="tile is-child">
+              <h1>
+                Need a hand?
+              </h1>
+              <figure class="image is-128x128" style="left:50%; transform:translate(-50%);">
+                <img src="./img/hand.svg" alt="">
+              </figure>
+              <p>
+                Have some boxes that need moving? Or someone to screw in a lightbulb? Call your geek! He could probably use the exercise.
+              </p>
+            </div>
+          </div>
+          </div>
+
+          <div class="hero-foot">
+
+          </div>
+
+  </section>
+
+  <!-- How it Works and Pricing Section -->
+  <section class="hero is-fullheight has-background-primary">
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container is-fullhd">
+          <div class="navbar-end">
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="hero-body">
+      <div class="container is-fullhd">
+        <div class="columns">
+          <div class="column is-half">
+            <div class="box">
+              <div class="content">
+                <h3>Maintenance Subscription - How it works:</h3>
+                <h6>1. Get in touch with a Geek</h6>
+                <p>Geek on a bike is for businesses in Eugene, Oregon that may require technical support when dealing with day to day business. To get started simply get in touch via phone or email and a geek will get back to you and help you subscribe to the plan.</p>
+                <h6>2. Make a Maintenance Request</h6>
+                <p> Experiencing a technical difficulty? Don't fret! Simply call 505-204-0976 or send an email to geekonabike2018@gmail.com with a short description of the issue you are experiencing.</p>
+                <h6>3. A Geek Will come Solve your Problems</h6>
+                <p>A geek will contact you back and schedule an appointment for a face to face visit at your earliest convenience. Same day appointments are our bread and butter!</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="box">
+              <div class="content">
+                <h3>Pricing:</h3>
+                <h6>Basic Maintenance Subscription - $100 per month </h6>
+                <p>Up to 3 hours of face to face technical support at your place of business. <br><button class="button is-fullwidth is-black is-outlined modal-button" aria-haspopup="true" data-target="modal" id="showModalBasic">Click for details</button></p>
+
+                <h6>Web Design & SEO - Contact for price quote </h6>
+                <p>Web Design, Maintenance, and Local SEO for your business. <br><button class="button is-fullwidth is-black is-outlined modal-button" aria-haspopup="true" data-target="modal" id="showModalDesign">Click for details</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+  </section>
+
+  <!-- Begin Hero with Form and Steps, use Columns to divide horizontally-->
+  <section class="hero is-fullheight has-background-white">
+    <div class="hero-head has-background-white" style="padding:40px;">
+      <h2 class="title is-3 has-text-centered has-text-black">
+        Apply Now
+      </h2>
+      <p class="subtitle has-text-centered">If you are interested in any of our services or have any questions please get in touch!</p>
+    </div>
+    <div class="hero-body">
+      <div class="columns">
+        <div class="column has-text-white">
+          <h6 class="title">
+            Grand Opening Exclusive!
+          </h6>
+          <p class="subtitle">
+            Since Geek on a bike is just getting off the ground, there will be a limited amount of subscription memberships available. Right now Geek on a bike is limiting itself to 30 members to ensure the highest level of customer service is provided.
+          </p>
+          <br>
+          <br>
+        </div>
+
+        <!-- Sell car form -->
+        <div class="column has-background-primary">
+          <h3 class="title has-text-white has-text-centered">  Contact </h3>
+          <p class="subtitle has-text-white">
+          <br><br>
+            Call:<br>
+            <a class="button is-white is-outlined is-fullwidth" href="tel:5052040976">505-204-0976</a>
+            <br><br>
+            Email: <br>
+            <a class="button is-white is-outlined is-fullwidth" href="mailto:geekonabike2018@gmail.com">geekonabike2018@gmail.com</a><br>
+          </p>
+        </div>
+        <!-- END EMAIL FORM -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <section class="hero has-background-primary">
+    <div class="hero-body has-text-centered">
+      <p class="subtitle has-text-white">Geek on a bike &copy; 2019</p>
+    </div>
+  </section>
+  <!-- END Form section -->
+
+  <!--  HIRE ME MODAL -->
+  <div class="container" id="app">
+    <div class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Hire Me!</p>
+
+          <button class="delete" aria-label="close"></button>
+
+        </header>
+        <section class="modal-card-body">
+          <!-- Content ... -->
+          <h1 class="title">What you need to know:</h1>
+          <p class="subtitle">
+            <br>
+            1. Feel <a class="subtitle" style="color:#008000;">free</a> to reach out! - I provide a detailed estimate of your websites total development costs <a class="subtitle" style="color:#008000;">before</a> you pay anything!
+            <br><br>
+            2. My current rate is <a class="subtitle" style="color:#008000;">$500 a week.</a> - Most sites have expenses beyond development such as hosting, domain name, etc... These costs will be <a class="subtitle" style="color:#008000;">outlined
+              in your cost estimate</a> I provide before you pay anything.
+            <br><br>
+            3. <a class="subtitle" style="color:#008000;">I don't bite off more than I can chew.</a> - If your site sounds too complex for me to develop, I'll tell you. <a class="subtitle" style="color:#008000;">I won't waste your time,</a> or mine.
+          </p>
+        </section>
+        <footer class="modal-card-foot">
+          <a href="mailto:geekonabike2018@gmail.com?subject=I%20would%20like%20website%20help&body=How%20can%20I%20help%20you%3F" class="button is-success">
+            Contact
+          </a>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <!--  Basic Maintenance Subscription Details Modal -->
+  <div class="container" id="app">
+    <div class="modal-basic">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title" style="font-size:18px;">Basic Maintenance Subscription</p>
+
+          <button class="delete" aria-label="close"></button>
+
+        </header>
+        <section class="modal-card-body">
+          <!-- Content ... -->
+          <h1 class="title">What you need to know:</h1>
+          <p class="subtitle">
+            <br>
+            - Up to 3 hours of technical support visits are available to you per month
+            <br><br>
+            - Our standard operating hours are 10am - 6pm Monday through Friday
+            <br><br>
+            - Each visit has a 1 hour minimum and is measured in 15 minute increments. So you can get up to 3 visits each month.
+            <br><br>
+            - Your geek is available to help in whatever way you need. Sure we are great at helping with technology, but maybe you need help moving boxes this month. That's cool with us!
+          </p>
+        </section>
+        <footer class="modal-card-foot">
+          <a href="./contact.html" class="button is-success">
+            Contact
+          </a>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <!--  Web Design Details Modal -->
+  <div class="container" id="app">
+    <div class="modal-design">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Web Design & SEO Details</p>
+
+          <button class="delete" aria-label="close"></button>
+
+        </header>
+        <section class="modal-card-body">
+          <!-- Content ... -->
+          <h1 class="title">Services we provide:</h1>
+          <p class="subtitle">
+            <br>
+            - Complete Website Design and Hosting using Wordpress or Custom HTML Code
+            <br><br>
+            - Local SEO with Google My Business, Yelp and Facebook
+            <br><br>
+            - Maintenance for your existing website
+            <br><br>
+            - Cost varies depending on customer needs, contact for quote
+          </p>
+        </section>
+        <footer class="modal-card-foot">
+          <a href="./contact.html" class="button is-success">
+            Contact
+          </a>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Scripts -->
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
+    });
+  </script>
+  <!-- HIRE ME MODAL SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $("#showModal").click(function() {
+      $(".modal").addClass("is-active");
+    });
+
+    $(".delete").click(function() {
+      $(".modal").removeClass("is-active");
+    });
+    //Basic Maintenance Details MODAL
+    $("#showModalBasic").click(function() {
+      $(".modal-basic").addClass("is-active");
+    });
+
+    $(".delete").click(function() {
+      $(".modal-basic").removeClass("is-active");
+    });
+    //Web Design Details Modal
+    $("#showModalDesign").click(function() {
+      $(".modal-design").addClass("is-active");
+    });
+
+    $(".delete").click(function() {
+      $(".modal-design").removeClass("is-active");
+    });
+  </script>
+
+
+
+  </script>
+
 </body>
+
 </html>

@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+$green: #008000;
+$lightgreen: #079255;
+$darkgreen: #336600;
+$primary: $green;
+$danger: $darkgreen;
+
+@import "../node_modules/bulma/sass/utilities/all";
+@import "../node_modules/bulma/sass/elements/box";
+.box-cool{
+    @extend .box;
+
+}
+
+.box-cool:hover{
+    opacity: .5;
+}
+
+//Hero with image of eugene as background
+.hero-eugene{
+  @extend .hero;
+  background-image: url("../img/eugene-skyline-adjusted-twice.jpg") ;
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  cover;
+  background-color: #999;
+}
+
+//Modals with service Details
+//Basic Subscription MODAL
+.modal-basic{
+  @extend .modal;
+}
+//Web Design details modal
+.modal-design{
+  @extend .modal;
+}
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+/*
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+$blue: #06bcef;
+// Add pink and its invert
+$pink: #ff8080;
+$pink-invert: #fff;
+// Update the sans-serif font family
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $pink;
+$primary-invert: $pink-invert;
+
+// 4. Import the rest of Bulma
+*/
+
+@import "../node_modules/bulma/bulma";
