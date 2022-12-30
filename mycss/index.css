@@ -37,3 +37,13 @@ html,body
 .opacity-change-remove-textstyle:hover{
   opacity:0.7;
 }
+
+/* CHANGE BACKGROUND OPACITY OF TILE ON HOVER */
+
+.wrapper {
+  opacity: 1;
+}
+
+.wrapper:hover {
+  opacity: 0.7;
+}
