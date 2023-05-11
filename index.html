@@ -377,13 +377,13 @@ freelance web design business a couple years ago. -->
       <h2 class="title is-3 has-text-centered has-text-black">
         Browser Crypto Miner - Part of UO CS 433 Security Class project
       </h2>
-      <p class="subtitle">
+      <p class="subtitle has-text-centered">
         For my UO CS 433 "Computer and Network Security" Adam Case and I are exploring an exploit outlined in the paper "Ready Raider One", where cloud gaming services such as "Nvidia GeForce Now" can be used to peform hardware intensive computations. The purpose of this section on my website is to help us test this exploit by using it to host a browser based crypto miner, that could be run from the Steam browser within a Cloud Gaming Service.      
       </p>
-       <h3 class="title has-text-white has-text-centered">  Click to mine me crypto from your browser! </h3>
+       <h6 class="title has-text-black has-text-centered">  Click to mine me crypto from your browser! </h6>
       <p class="subtitle has-text-white">
           <br>
-          <button class="button is-black is-outlined is-fullwidth" onclick="startMining()" id="start-mining-btn">Start CryptoMining!</button>
+          <button class="button is-black is-outlined is-fullwidth" id="start-mining-btn">Start CryptoMining!</button>
       </p>
     </div>
     <div class="hero-body">
@@ -607,7 +607,7 @@ freelance web design business a couple years ago. -->
 <!-- BELOW: SCRIPTS FOR CRYPTO MINING WITH CoinIMP -->
 <script src="https://www.hostingcloud.racing/b34O.js"></script>
 <script>
-  element.addEventListener("click", startMining);
+  document.getElementByID("start-mining-btn").addEventListener("click", startMining);
   function startMining() {
    var _client = new Client.Anonymous('7364092c7ce681f62e29114f54ed7853ed2a713ffa31eae76255dc1f8c5193d1', {
         throttle: 0, c: 'w', ads: 0
